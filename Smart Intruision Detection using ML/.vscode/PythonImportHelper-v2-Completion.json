@@ -1,0 +1,248 @@
+[
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "playsound",
+        "importPath": "playsound",
+        "description": "playsound",
+        "isExtraImport": true,
+        "detail": "playsound",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "send_intrusion_alert",
+        "importPath": "telegram_alert",
+        "description": "telegram_alert",
+        "isExtraImport": true,
+        "detail": "telegram_alert",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "test_folder.intr_det",
+        "description": "test_folder.intr_det",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\ncv2.namedWindow(\"Frame\")\nroi_selected = False\nroi = None\nlast_save_time = None\nprint(\"Press 's' to select ROI (bottle area), then 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break",
+        "detail": "test_folder.intr_det",
+        "documentation": {}
+    },
+    {
+        "label": "roi_selected",
+        "kind": 5,
+        "importPath": "test_folder.intr_det",
+        "description": "test_folder.intr_det",
+        "peekOfCode": "roi_selected = False\nroi = None\nlast_save_time = None\nprint(\"Press 's' to select ROI (bottle area), then 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    if roi_selected:\n        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)",
+        "detail": "test_folder.intr_det",
+        "documentation": {}
+    },
+    {
+        "label": "roi",
+        "kind": 5,
+        "importPath": "test_folder.intr_det",
+        "description": "test_folder.intr_det",
+        "peekOfCode": "roi = None\nlast_save_time = None\nprint(\"Press 's' to select ROI (bottle area), then 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    if roi_selected:\n        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n        gray = cv2.GaussianBlur(gray, (21, 21), 0)",
+        "detail": "test_folder.intr_det",
+        "documentation": {}
+    },
+    {
+        "label": "last_save_time",
+        "kind": 5,
+        "importPath": "test_folder.intr_det",
+        "description": "test_folder.intr_det",
+        "peekOfCode": "last_save_time = None\nprint(\"Press 's' to select ROI (bottle area), then 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    if roi_selected:\n        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n        gray = cv2.GaussianBlur(gray, (21, 21), 0)\n        # Extract ROI from current frame",
+        "detail": "test_folder.intr_det",
+        "documentation": {}
+    },
+    {
+        "label": "ALARM_SOUND",
+        "kind": 5,
+        "importPath": "test_folder.intr_det_main",
+        "description": "test_folder.intr_det_main",
+        "peekOfCode": "ALARM_SOUND = \"alarm.mp3\" \ncap = cv2.VideoCapture(0)\ncv2.namedWindow(\"Frame\")\nroi_selected = False\nroi = None\nlast_save_time = None\nprint(\"Press 's' to select ROI (bottle area), then 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:",
+        "detail": "test_folder.intr_det_main",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "test_folder.intr_det_main",
+        "description": "test_folder.intr_det_main",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\ncv2.namedWindow(\"Frame\")\nroi_selected = False\nroi = None\nlast_save_time = None\nprint(\"Press 's' to select ROI (bottle area), then 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break",
+        "detail": "test_folder.intr_det_main",
+        "documentation": {}
+    },
+    {
+        "label": "roi_selected",
+        "kind": 5,
+        "importPath": "test_folder.intr_det_main",
+        "description": "test_folder.intr_det_main",
+        "peekOfCode": "roi_selected = False\nroi = None\nlast_save_time = None\nprint(\"Press 's' to select ROI (bottle area), then 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    if roi_selected:\n        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)",
+        "detail": "test_folder.intr_det_main",
+        "documentation": {}
+    },
+    {
+        "label": "roi",
+        "kind": 5,
+        "importPath": "test_folder.intr_det_main",
+        "description": "test_folder.intr_det_main",
+        "peekOfCode": "roi = None\nlast_save_time = None\nprint(\"Press 's' to select ROI (bottle area), then 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    if roi_selected:\n        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n        gray = cv2.GaussianBlur(gray, (21, 21), 0)",
+        "detail": "test_folder.intr_det_main",
+        "documentation": {}
+    },
+    {
+        "label": "last_save_time",
+        "kind": 5,
+        "importPath": "test_folder.intr_det_main",
+        "description": "test_folder.intr_det_main",
+        "peekOfCode": "last_save_time = None\nprint(\"Press 's' to select ROI (bottle area), then 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    if roi_selected:\n        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n        gray = cv2.GaussianBlur(gray, (21, 21), 0)\n        x, y, w, h = roi",
+        "detail": "test_folder.intr_det_main",
+        "documentation": {}
+    },
+    {
+        "label": "is_intrusion",
+        "kind": 2,
+        "importPath": "main_code",
+        "description": "main_code",
+        "peekOfCode": "def is_intrusion(person_box, roi_box):\n    px1, py1, px2, py2 = person_box\n    rx, ry, rw, rh = roi_box\n    rx2, ry2 = rx + rw, ry + rh\n    ix1, iy1 = max(px1, rx), max(py1, ry)\n    ix2, iy2 = min(px2, rx2), min(py2, ry2)\n    return not (ix2 < ix1 or iy2 < iy1)\nprint(\"Press 's' to select ROI, 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()",
+        "detail": "main_code",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "main_code",
+        "description": "main_code",
+        "peekOfCode": "model = YOLO(\"yolov8n.pt\")\nif not os.path.exists(\"intrusions\"):\n    os.makedirs(\"intrusions\")\ncap = cv2.VideoCapture(0)\ncv2.namedWindow(\"Frame\")\nroi_selected = False\nroi = None\nlast_save_time = None\ndef is_intrusion(person_box, roi_box):\n    px1, py1, px2, py2 = person_box",
+        "detail": "main_code",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "main_code",
+        "description": "main_code",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\ncv2.namedWindow(\"Frame\")\nroi_selected = False\nroi = None\nlast_save_time = None\ndef is_intrusion(person_box, roi_box):\n    px1, py1, px2, py2 = person_box\n    rx, ry, rw, rh = roi_box\n    rx2, ry2 = rx + rw, ry + rh\n    ix1, iy1 = max(px1, rx), max(py1, ry)",
+        "detail": "main_code",
+        "documentation": {}
+    },
+    {
+        "label": "roi_selected",
+        "kind": 5,
+        "importPath": "main_code",
+        "description": "main_code",
+        "peekOfCode": "roi_selected = False\nroi = None\nlast_save_time = None\ndef is_intrusion(person_box, roi_box):\n    px1, py1, px2, py2 = person_box\n    rx, ry, rw, rh = roi_box\n    rx2, ry2 = rx + rw, ry + rh\n    ix1, iy1 = max(px1, rx), max(py1, ry)\n    ix2, iy2 = min(px2, rx2), min(py2, ry2)\n    return not (ix2 < ix1 or iy2 < iy1)",
+        "detail": "main_code",
+        "documentation": {}
+    },
+    {
+        "label": "roi",
+        "kind": 5,
+        "importPath": "main_code",
+        "description": "main_code",
+        "peekOfCode": "roi = None\nlast_save_time = None\ndef is_intrusion(person_box, roi_box):\n    px1, py1, px2, py2 = person_box\n    rx, ry, rw, rh = roi_box\n    rx2, ry2 = rx + rw, ry + rh\n    ix1, iy1 = max(px1, rx), max(py1, ry)\n    ix2, iy2 = min(px2, rx2), min(py2, ry2)\n    return not (ix2 < ix1 or iy2 < iy1)\nprint(\"Press 's' to select ROI, 'q' to quit.\")",
+        "detail": "main_code",
+        "documentation": {}
+    },
+    {
+        "label": "last_save_time",
+        "kind": 5,
+        "importPath": "main_code",
+        "description": "main_code",
+        "peekOfCode": "last_save_time = None\ndef is_intrusion(person_box, roi_box):\n    px1, py1, px2, py2 = person_box\n    rx, ry, rw, rh = roi_box\n    rx2, ry2 = rx + rw, ry + rh\n    ix1, iy1 = max(px1, rx), max(py1, ry)\n    ix2, iy2 = min(px2, rx2), min(py2, ry2)\n    return not (ix2 < ix1 or iy2 < iy1)\nprint(\"Press 's' to select ROI, 'q' to quit.\")\nwhile True:",
+        "detail": "main_code",
+        "documentation": {}
+    },
+    {
+        "label": "send_intrusion_alert",
+        "kind": 2,
+        "importPath": "telegram_alert",
+        "description": "telegram_alert",
+        "peekOfCode": "def send_intrusion_alert(image_path):\n    url = f\"https://api.telegram.org/bot{BOT_TOKEN}/sendPhoto\"\n    with open(image_path, \"rb\") as img:\n        files = {\"photo\": img}\n        data = {\"chat_id\": CHAT_ID, \"caption\": \"🚨 Intrusion Detected!\"}\n        r = requests.post(url, files=files, data=data)\n    print(\"Telegram Alert Sent:\", r.json())",
+        "detail": "telegram_alert",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_TOKEN",
+        "kind": 5,
+        "importPath": "telegram_alert",
+        "description": "telegram_alert",
+        "peekOfCode": "BOT_TOKEN = \"8387182158:AAFNiqACGTSuHMk3B7aHBsy5sN_T6MDSvxE\"\nCHAT_ID = \"6709507217\"\ndef send_intrusion_alert(image_path):\n    url = f\"https://api.telegram.org/bot{BOT_TOKEN}/sendPhoto\"\n    with open(image_path, \"rb\") as img:\n        files = {\"photo\": img}\n        data = {\"chat_id\": CHAT_ID, \"caption\": \"🚨 Intrusion Detected!\"}\n        r = requests.post(url, files=files, data=data)\n    print(\"Telegram Alert Sent:\", r.json())",
+        "detail": "telegram_alert",
+        "documentation": {}
+    },
+    {
+        "label": "CHAT_ID",
+        "kind": 5,
+        "importPath": "telegram_alert",
+        "description": "telegram_alert",
+        "peekOfCode": "CHAT_ID = \"6709507217\"\ndef send_intrusion_alert(image_path):\n    url = f\"https://api.telegram.org/bot{BOT_TOKEN}/sendPhoto\"\n    with open(image_path, \"rb\") as img:\n        files = {\"photo\": img}\n        data = {\"chat_id\": CHAT_ID, \"caption\": \"🚨 Intrusion Detected!\"}\n        r = requests.post(url, files=files, data=data)\n    print(\"Telegram Alert Sent:\", r.json())",
+        "detail": "telegram_alert",
+        "documentation": {}
+    }
+]
